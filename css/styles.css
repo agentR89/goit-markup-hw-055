@@ -691,9 +691,9 @@ background-size: cover;
   .form-close-btn:hover,
   .form-close-btn:focus {
     background-color: #404bbf;
-    fill: #fff;
     border: none;
   }
+
   .modal-p {
     color: #2e2f42;
     text-align: center;
