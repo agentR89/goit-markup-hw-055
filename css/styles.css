@@ -647,7 +647,7 @@ background-size: cover;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
-   .backdrop.is-open {
+   .backdrop.is-hidden {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -692,6 +692,7 @@ background-size: cover;
   .form-close-btn:hover,
   .form-close-btn:focus {
     background-color: #404bbf;
+    fill: #fff;
     border: none;
   }
 
