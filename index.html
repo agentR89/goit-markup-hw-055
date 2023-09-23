@@ -1,6 +1,6 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
+  <head>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -103,9 +103,20 @@
             d="M32 6.078c-1.19.522-2.458.868-3.78 1.036a6.523 6.523 0 0 0 2.886-3.626 13.11 13.11 0 0 1-4.16 1.588A6.574 6.574 0 0 0 22.154 3c-3.632 0-6.556 2.948-6.556 6.562 0 .52.044 1.02.152 1.496-5.454-.266-10.28-2.88-13.522-6.862a6.605 6.605 0 0 0-.898 3.316 6.57 6.57 0 0 0 2.914 5.452 6.479 6.479 0 0 1-2.964-.808v.072c0 3.188 2.274 5.836 5.256 6.446a6.548 6.548 0 0 1-1.72.216 5.8 5.8 0 0 1-1.242-.112c.85 2.598 3.262 4.508 6.13 4.57a13.182 13.182 0 0 1-8.134 2.798c-.538 0-1.054-.024-1.57-.09A18.469 18.469 0 0 0 10.064 29c12.072 0 18.672-10 18.672-18.668 0-.29-.01-.57-.024-.848A13.087 13.087 0 0 0 32 6.078z"
           />
         </symbol>
+        <symbol id="icon-menu-ico" viewBox="0 0 32 32">
+          <path
+            d="M4.799 8.001a1.6 1.6 0 0 1 1.6-1.6h19.2a1.6 1.6 0 0 1 0 3.2h-19.2a1.6 1.6 0 0 1-1.6-1.6z"
+          />
+          <path
+            stroke-width="1.333"
+            d="M5.466 24.001a.932.932 0 0 1 .933-.933h19.2a.932.932 0 1 1 0 1.866h-19.2a.932.932 0 0 1-.933-.933z"
+          />
+          <path
+            d="M4.799 16.001a1.6 1.6 0 0 1 1.6-1.6h19.2a1.6 1.6 0 0 1 0 3.2h-19.2a1.6 1.6 0 0 1-1.6-1.6z"
+          />
+        </symbol>
         <symbol id="icon-check" viewBox="0 0 40 32">
           <path
-            fill="#2e2f42"
             d="M33.782 1.02a3.668 3.668 0 0 1 5.115.039 3.712 3.712 0 0 1 .135 5.141L19.454 30.817a3.674 3.674 0 0 1-4.074.914 3.675 3.675 0 0 1-1.226-.815L1.17 17.862A3.693 3.693 0 0 1-.001 15.22a3.714 3.714 0 0 1 1.077-2.682 3.664 3.664 0 0 1 4.1-.763 3.68 3.68 0 0 1 1.195.857l10.275 10.325 17.042-21.83c.031-.038.063-.074.098-.109h-.005z"
           />
         </symbol>
@@ -136,33 +147,38 @@
         </symbol>
       </defs>
     </svg>
-
 <!--header-->
-
         <header class="page-header">
-            <div class="container page-flex-container">
+            <div class="page-flex-container container">
                 <nav class="page-navigation">
                     <a class="logo-web" href="./index.html">Web<span class="logo-studio">Studio</span></a>
                     <ul class="tabs-ul">
-                        <li><a class="tabs-current" href="./index.html">Studio</a></li>
+                        <li><a class="tabs current" href="./index.html">Studio</a></li>
                         <li><a class="tabs" href="">Portfolio</a></li>
                         <li><a class="tabs" href="">Contacts</a></li>
                     </ul>
                 </nav>
-        
+                <button class="mob-menu-open-btn" type="button" data-menu-open>
+                  <svg
+                    class="mob-menu-open-ico"
+                    width="16.8"
+                    height="16.8"
+                    aria-label="modal close icon"
+                  >
+                    <use href="./images/form-icons.svg#icon-menu-ico"></use>
+                  </svg>
+                </button>
                 <address class="contact">
                     <ul class="contact-ul">
                         <li><a class="contact-src" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li><a class="contact-src" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                     </ul>
                 </address>
-            </div>
-            
+              </div>
         </header>
-
-            <main>
 <!--section 1-->
-                <section class="sectionl">
+            <main>
+                <section id="studio-id" class="sectionl">
                   <div class="container">
                     <h1 class="section-titlel">Effective Solutions for Your Business</h1>
                     <button class="button-l" type="button" data-modal-open> Order Service</button>
@@ -173,36 +189,36 @@
                    <div class="container"> 
                     <h2 class="visually-hidden">Features</h2>
                     <ul class="features">
-                        <li class="features-li">
+                        <li class="features-li mob-features-li">
                           <div class="features-container">
-                            <svg class="anten" width="64" height="64">
+                            <svg class="anten" width="63" height="63">
                             <use href="./images/icons.svg#icon-antenna-1"></use>
                             </svg>
                           </div>
                             <h3 class="sectionll-titlell">Strategy</h3>
                             <p class="section-textll">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
                         </li>
-                        <li class="features-li">
+                        <li class="features-li mob-features-li">
                           <div class="features-container">
-                            <svg class="cloc" width="64" height="64">
+                            <svg class="cloc" width="63" height="63">
                             <use href="./images/icons.svg#icon-clock-2"></use>
                             </svg>
                           </div>  
                             <h3 class="sectionll-titlell">Punctuality</h3>
                             <p class="section-textll">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                         </li>
-                          <li class="features-li">
+                          <li class="features-li mob-features-li">
                             <div class="features-container">
-                              <svg class="diagra" width="64" height="64">
+                              <svg class="diagra" width="63" height="63">
                               <use href="./images/icons.svg#icon-diagram-3"></use>
                               </svg>
                             </div>
                             <h3 class="sectionll-titlell">Diligence</h3>
                             <p class="section-textll">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                         </li>       
-                        <li class="features-li">
+                        <li class="features-li mob-features-li">
                           <div class="features-container">
-                            <svg class="astro" width="64" height="64">
+                            <svg class="astro" width="63" height="63">
                             <use href="./images/icons.svg#icon-astronaut-4"></use>
                             </svg>
                           </div>
@@ -213,12 +229,13 @@
                    </div> 
                 </section>
 <!--section 3-->
-                <section class="sectionlll">
+                <section id="contact-id" class="sectionlll">
                    <div class="container">
                     <h2 class="section-titlelll">Our Team</h2>
                     <ul class="team-li">
                         <li class="list-team">
                             <img 
+                            srcset="./images/imgmarkguererro2.jpg 2x"
                             src="./images/imgmarkguererro2.jpg" 
                             alt="mark" 
                             width="264"
@@ -237,7 +254,7 @@
                                 ></a>
                               </li>
                               <li class="icons">
-                                <a class="icon-a" href="https://twitter.com/"
+                                <a class="icon-a" href="https://twitter.com"
                                   ><svg class="instag" width="16" height="16">
                                     <use
                                       href="./images/icons.svg#icon-twitter-2"
@@ -245,11 +262,10 @@
                                 ></a>
                               </li>
                               <li class="icons">
-                                <a class="icon-a" href="https://www.facebook.com/"
+                                <a class="icon-a" href="https://www.facebook.com"
                                   ><svg class="instag" width="16" height="16">
                                     <use
-                                      href="./images/icons.svg#
-                                      acebook-3"
+                                      href="./images/icons.svg#icon-facebook-3"
                                     ></use></svg
                                 ></a>
                               </li>
@@ -267,6 +283,7 @@
                     
                         <li class="list-team">
                             <img 
+                            srcset="./images/imgtomford.jpg 2x"
                             src="./images/imgtomford.jpg" 
                             alt="tom" 
                             width="264"
@@ -279,25 +296,25 @@
                               <li class="icons">
                                 <a class="icon-a" href="https://www.instagram.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href="#icon-instagram-1"></use></svg
+                                    <use href="./images/icons.svg#icon-instagram-1"></use></svg
                                 ></a>
                               </li>
                               <li class="icons">
-                                <a class="icon-a" href="https://twitter.com/"
+                                <a class="icon-a" href="https://twitter.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href="#icon-twitter-2"></use></svg
+                                    <use href="./images/icons.svg#icon-twitter-2"></use></svg
                                 ></a>
                               </li>
                               <li class="icons">
-                                <a class="icon-a" href="https://www.facebook.com/"
+                                <a class="icon-a" href="https://www.facebook.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href="#icon-facebook-3"></use></svg
+                                    <use href="./images/icons.svg#icon-facebook-3"></use></svg
                                 ></a>
                               </li>
                               <li class="icons">
                                 <a class="icon-a" href="https://www.linkedin.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href="#icon-linkedin-4"></use></svg
+                                    <use href="./images/icons.svg#icon-linkedin-4"></use></svg
                                 ></a>
                               </li>
                             </ul>
@@ -306,6 +323,7 @@
                    
                         <li class="list-team">
                             <img 
+                            srcset="./images/imgcamilagarcia.jpg 2x"
                             src="./images/imgcamilagarcia.jpg" 
                             alt="camila" 
                             width="264"
@@ -318,25 +336,25 @@
                               <li class="icons">
                                 <a class="icon-a" href="https://www.instagram.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href="#icon-instagram-1"></use></svg
+                                    <use href="./images/icons.svg#icon-instagram-1"></use></svg
                                 ></a>
                               </li>
                               <li class="icons">
-                                <a class="icon-a" href="https://twitter.com/"
+                                <a class="icon-a" href="https://twitter.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href="#icon-twitter-2"></use></svg
+                                    <use href="./images/icons.svg#icon-twitter-2"></use></svg
                                 ></a>
                               </li>
                               <li class="icons">
-                                <a class="icon-a" href="https://www.facebook.com/"
+                                <a class="icon-a" href="https://www.facebook.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href=".images"></use></svg
+                                    <use href="./images/icons.svg#icon-facebook-3"></use></svg
                                 ></a>
                               </li>
                               <li class="icons">
                                 <a class="icon-a" href="https://www.linkedin.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href="#icon-linkedin-4"></use></svg
+                                    <use href="./images/icons.svg#icon-linkedin-4"></use></svg
                                 ></a>
                               </li>
                             </ul>
@@ -345,6 +363,7 @@
                 
                         <li class="list-team">
                             <img 
+                            srcset="./images/imgdanielwilson.jpg 2x"
                             src="./images/imgdanielwilson.jpg" 
                             alt="daniel" 
                             width="264"
@@ -357,25 +376,25 @@
                               <li class="icons">
                                 <a class="icon-a" href="https://www.instagram.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href="#icon-instagram-1"></use></svg
+                                    <use href="./images/icons.svg#icon-instagram-1"></use></svg
                                 ></a>
                               </li>
                               <li class="icons">
-                                <a class="icon-a" href="https://twitter.com/"
+                                <a class="icon-a" href="https://twitter.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href="#icon-twitter-2"></use></svg
+                                    <use href="./images/icons.svg#icon-twitter-2"></use></svg
                                 ></a>
                               </li>
                               <li class="icons">
-                                <a class="icon-a" href="https://www.facebook.com/"
+                                <a class="icon-a" href="https://www.facebook.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href="#icon-facebook-3"></use></svg
+                                    <use href="./images/icons.svg#icon-facebook-3"></use></svg
                                 ></a>
                               </li>
                               <li class="icons">
                                 <a class="icon-a" href="https://www.linkedin.com"
                                   ><svg class="instag" width="16" height="16">
-                                    <use href="#icon-linkedin-4"></use></svg
+                                    <use href="./images/icons.svg#icon-linkedin-4"></use></svg
                                 ></a>
                               </li>
                             </ul>
@@ -385,17 +404,24 @@
                    </div>
                 </section>
 <!--section 4-->
-                <section class="sectionllll">
+                <section id="portfolio-id" class="sectionllll">
                    <div class="container">
                     <h2 class="portfolio-title">Our Portfolio</h2>
                     <ul class="portfolio-ul">
                         <li class="portfolio-li">
                           <div class="product-box">
-                              <img 
-                              src="./images/imgbanking.jpg"
+                              <img
+                              srcset="
+                                ./images/portfolio/mob/mob-1-288w.jpg    288w,
+                                ./images/portfolio/mob/mob-1-288w@2x.jpg 576w,
+                                ./images/portfolio/tab/tab-1-356w.jpg    356w,
+                                ./images/portfolio/tab/tab-1-356w@2x.jpg 712w,
+                                ./images/portfolio/pc/pc-1-360w.jpg      360w,
+                                ./images/portfolio/pc/pc-1-360w@2x.jpg   720w
+                              "
+                              src="./images/portfolio/mob/mob-1-288w.jpg"
                               alt="banking"
-                              width="360"
-                              height="300"
+                              sizes="(min-width: 1158px) 360px, (min-width:768px) 356px, (min-width: 320px) 288px"
                               />
                               <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task
@@ -412,10 +438,17 @@
                         <li class="portfolio-li">
                           <div class="product-box">
                             <img 
-                            src="./images/imgcashless.jpg" 
+                            srcset="
+                              ./images/portfolio/mob/mob-2-288w.jpg    288w,
+                              ./images/portfolio/mob/mob-2-288w@2x.jpg 576w,
+                              ./images/portfolio/tab/tab-2-356w.jpg    356w,
+                              ./images/portfolio/tab/tab-2-356w@2x.jpg 712w,
+                              ./images/portfolio/pc/pc-2-360w.jpg      360w,
+                              ./images/portfolio/pc/pc-2-360w@2x.jpg   720w
+                            "
+                            src="./images/portfolio/mob/mob-2-288w.jpg" 
                             alt="cashless"
-                            width="360"
-                            height="300"
+                            sizes="(min-width: 1158px) 360px, (min-width:768px) 356px, (min-width: 320px) 288px"
                             />
                             <p class="overlay">
                               14 Stylish and User-Friendly App Design Concepts · Task
@@ -432,10 +465,17 @@
                         <li class="portfolio-li">
                           <div class="product-box">
                             <img 
-                            src="./images/imgmeditation.jpg" 
+                            srcset="
+                              ./images/portfolio/mob/mob-3-288w.jpg    288w,
+                              ./images/portfolio/mob/mob-3-288w@2x.jpg 576w,
+                              ./images/portfolio/tab/tab-3-356w.jpg    356w,
+                              ./images/portfolio/tab/tab-3-356w@2x.jpg 712w,
+                              ./images/portfolio/pc/pc-3-360w.jpg      360w,
+                              ./images/portfolio/pc/pc-3-360w@2x.jpg   720w
+                            "
+                            src="./images/portfolio/mob/mob-3-288w.jpg"
                             alt="meditation"
-                            width="360"
-                            height="300"
+                            sizes="(min-width: 1158px) 360px, (min-width:768px) 356px, (min-width: 320px) 288px"
                             />
                             <p class="overlay">
                               14 Stylish and User-Friendly App Design Concepts · Task
@@ -452,10 +492,17 @@
                         <li class="portfolio-li">
                           <div class="product-box">
                             <img 
-                            src="./images/imgtaxi.jpg" 
+                            srcset="
+                              ./images/portfolio/mob/mob-4-288w.jpg    288w,
+                              ./images/portfolio/mob/mob-4-288w@2x.jpg 576w,
+                              ./images/portfolio/tab/tab-4-356w.jpg    356w,
+                              ./images/portfolio/tab/tab-4-356w@2x.jpg 712w,
+                              ./images/portfolio/pc/pc-4-360w.jpg      360w,
+                              ./images/portfolio/pc/pc-4-360w@2x.jpg   720w
+                            "
+                            src="./images/portfolio/mob/mob-4-288w.jpg"
                             alt="taxi"
-                            width="360"
-                            height="300"
+                            sizes="(min-width: 1158px) 360px, (min-width:768px) 356px, (min-width: 320px) 288px"
                             />
                             <p class="overlay">
                               14 Stylish and User-Friendly App Design Concepts · Task
@@ -472,10 +519,17 @@
                         <li class="portfolio-li">
                           <div class="product-box">
                             <img 
-                            src="./images/imgscreen2.jpg" 
+                            srcset="
+                              ./images/portfolio/mob/mob-5-288w.jpg    288w,
+                              ./images/portfolio/mob/mob-5-288w@2x.jpg 576w,
+                              ./images/portfolio/tab/tab-5-356w.jpg    356w,
+                              ./images/portfolio/tab/tab-5-356w@2x.jpg 712w,
+                              ./images/portfolio/pc/pc-5-360w.jpg      360w,
+                              ./images/portfolio/pc/pc-5-360w@2x.jpg   720w
+                            "
+                            src="./images/portfolio/mob/mob-5-288w.jpg"
                             alt="screen"
-                            width="360"
-                            height="300"
+                            sizes="(min-width: 1158px) 360px, (min-width:768px) 356px, (min-width: 320px) 288px"
                             />
                             <p class="overlay">
                               14 Stylish and User-Friendly App Design Concepts · Task
@@ -492,10 +546,17 @@
                         <li class="portfolio-li">
                           <div class="product-box">
                             <img 
-                            src="./images/imgonline.jpg" 
+                            srcset="
+                              ./images/portfolio/mob/mob-6-288w.jpg    288w,
+                              ./images/portfolio/mob/mob-6-288w@2x.jpg 576w,
+                              ./images/portfolio/tab/tab-6-356w.jpg    356w,
+                              ./images/portfolio/tab/tab-6-356w@2x.jpg 712w,
+                              ./images/portfolio/pc/pc-6-360w.jpg      360w,
+                              ./images/portfolio/pc/pc-6-360w@2x.jpg   720w
+                            "
+                            src="./images/portfolio/mob/mob-6-288w.jpg"
                             alt="online"
-                            width="360"
-                            height="300"
+                            sizes="(min-width: 1158px) 360px, (min-width:768px) 356px, (min-width: 320px) 288px"
                             />
                             <p class="overlay">
                               14 Stylish and User-Friendly App Design Concepts · Task
@@ -534,13 +595,13 @@
                       ></a>
                     </li>
                     <li class="icons">
-                      <a class="icon-f-a" href="https://twitter.com/"
+                      <a class="icon-f-a" href="https://twitter.com"
                         ><svg class="instag" width="24" height="24">
                           <use href="./images/icons.svg#icon-twitter-2"></use></svg
                       ></a>
                     </li>
                     <li class="icons">
-                      <a class="icon-f-a" href="https://www.facebook.com/"
+                      <a class="icon-f-a" href="https://www.facebook.com"
                         ><svg class="instag" width="24" height="24">
                           <use href="./images/icons.svg#icon-facebook-3"></use></svg
                       ></a>
@@ -578,6 +639,7 @@
                   </div>
                 </div>
               </footer>
+<!--Modal window-->              
               <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                   <button class="form-close-btn" type="button" data-modal-close>
@@ -677,17 +739,69 @@
                   </form>
                 </div>
               </div>
-              <script src="./js/modal.js"></script>
-            </body>
-        
-            
-
-
-
-
-
-
-         
-            </html>
-
-    
+             <!--Mobile Menu-->
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="container">
+        <button class="menu-close-btn" type="button" data-menu-close>
+          <svg
+            class="mob-menu-ico"
+            width="8"
+            height="8"
+            aria-label="menu close icon"
+            >
+            <use href="./images/form-icons.svg#icon-close-form-0"></use>
+          </svg>
+        </button>
+          <nav class="mob-nav">
+            <ul class="mob-ul">
+              <li><a class="mob-tab" href="./index.html">Studio</a></li>
+              <li><a class="mob-tab" href="">Portfolio</a></li>
+              <li><a class="mob-tab" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="mob-contact">
+            <ul class="mob-contact-ul">
+              <li>
+                <a class="mob-contact-a" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="mob-contact-a" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+            <ul class="mob-icons-container">
+              <li class="mob-icons">
+                <a class="mob-icon-a" href="https://www.instagram.com"
+                  ><svg class="mob-instag" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-1"></use></svg
+                ></a>
+              </li>
+              <li class="mob-icons">
+                <a class="mob-icon-a" href="https://twitter.com"
+                  ><svg class="mob-instag" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter-2"></use></svg
+                ></a>
+              </li>
+              <li class="mob-icons">
+                <a class="mob-icon-a" href="https://www.facebook.com"
+                  ><svg class="mob-instag" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook-3"></use></svg
+                ></a>
+              </li>
+              <li class="mob-icons">
+                <a class="mob-icon-a" href="https://www.linkedin.com"
+                  ><svg class="mob-instag" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin-4"></use></svg
+                ></a>
+              </li>
+            </ul>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
